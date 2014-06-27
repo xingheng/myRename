@@ -1,5 +1,6 @@
 
-__author__ == " Will Han"
+__version__ = '1.0'
+__author__ = " Will Han"
 
 
 import os, sys
@@ -98,8 +99,8 @@ def printHelp():
 
             """
 
-if __name__ == '__main__':
-
+def main():
+    
     dirPath = ''
     filePrefix = 'item'
     if len(sys.argv) == 4 :
@@ -119,6 +120,7 @@ if __name__ == '__main__':
         print "We finished renaming ", count, " file(s)."
     else :
         printHelp()
-    
 
-        
+
+if __name__ == '__main__':
+    main()
